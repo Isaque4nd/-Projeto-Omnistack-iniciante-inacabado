@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<!-- 
+     HTML - 
+     
+     Hypertext 
+     
+     Hiper textos
+     São textos que aceitam links
+    
+     MArkup 
+     Marcação feita com <tags>
+    
+     Language
+     Linguagem
+
+
+
+-->
+
+
+<html><!--  Tag HTML   -->   
+
+       <head>
+         <meta charset="UTF-8">
+        <!-- Responsável por receber configurações da página -->
+          <title>Treine em casa</title>
+          
+          <link href="https://fonts.googleapis.com/css?family=Sen:400,700,800&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+       
+        </head>
+
+       <body>
+           
+        <div id="container">
+
+           <section id="intro">
+                
+            <header>
+              <img src="small_Projeto.png" alt="imagem da logomarca">
+            </header>
+            
+            <main>
+              <p class="fat">
+                  Não fique parado!
+                </p>
+                 
+                <p>
+                    <strong>Aproveite a quarentena</strong> e mantenha seu corpo saudável e em forma
+                    
+                </p>
+            </main>
+
+                <section id="buttons">
+                      <button><a href="http://continuarlendo.com.br">  Continuar lendo </a></button>
+                      <button class="fat" onclick="onOff()">Adicione um exercício</button>
+                </section>
+      
+                  
+      
+                  
+                <footer id="footer" >  By: Isaque andrade </footer>
+            
+
+           </section> 
+
+           <section id="last-ideias">
+                    <div class="idea">
+                          <img  
+                            src="https://www.flaticon.com/premium-icon/icons/svg/784/784006.svg" 
+                            alt="imagem de personagem correndo na esteira">
+                   
+                        <div class="content">
+                            <h3>Corra</h3>
+                            <p>Esteira</p>
+                            <div class="description">
+                              Divida em dois tempos de 30 minutos, descanse entre eles por 3 mininutos
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+      
+                    <div class="idea">
+                      <img  
+                        src="https://www.flaticon.com/premium-icon/icons/svg/784/784027.svg" 
+                        alt="imagem de personagem fazendo abdominais">
+               
+                    <div class="content">
+                        <h3>Se quiser ter tanquinho...</h3>
+                        <p>Abdominais</p>
+                        <div class="description">
+                          Começe dividindo em cinco séries de dez, descanse 30 segundos entre cada série
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+
+                <div class="idea">
+                  <img  
+                    src="https://www.flaticon.com/premium-icon/icons/svg/784/784005.svg" 
+                    alt="imagem de personagem na bicicleta ergométrica">
+           
+                <div class="content">
+                    <h3>Pedale</h3>
+                    <p>Bicicleta</p>
+                    <div class="description">
+                      Caso tenha o equipamento, procure tirar um tempo do seu dia para pedalar
+                    </div>
+                    <a href="#">Ir para a ideia</a>
+                </div>
+            </div>
+
+   </section>
+            
+
+        </div>
+        
+        <div id="modal" class="hide">
+            <div class="content">
+                  <h1>Nova Ideia</h1> 
+      
+      
+        <form action="">
+
+          <div class="input-wrapper">
+            <label for="title">Título da Ideia</label>
+            <input type="text" name="title">
+          </div>
+          
+          <div class="inputwrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category">
+          </div>
+          
+          <div class="inputwrapper">
+            <label for="image">Link da imagem</label>
+            <input type="url" name="image">
+          </div>
+          
+          <div class="inputwrapper">
+            <label for="description">Digite uma descrição para essa ideia</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+          
+          <div class="inputwrapper">
+            <label for="link">Link da ideia</label>
+            <input type="url" name="link">
+          </div>
+
+          <a href="#" onclick="onOff()">Voltar</a>
+          <button>Salvar</button>
+
+        </form>
+            </div>
+        </div>
+        
+           <script src="scripts.js"></script>              
+           
+       </body>
+
+
+
+</html>
